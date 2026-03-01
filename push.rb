@@ -1,28 +1,39 @@
 #!/usr/bin/env ruby
 
-KIND = %w(debug ruby)
+DEBUG_MODE = ["", "_debug"]
 USER = %w(root nonroot)
 ARCH = %w(amd64 arm64)
-DISTRO = %w(debian10 debian11)
-PREFIX = "//experimental/ruby"
+DISTRO = %w(debian12 debian13)
 
 build_date = Time.now.strftime("%F")
 
-KIND.each do |kind|
+DEBUG_MODE.each do |mode|
   USER.each do |user|
     ARCH.each do |arch|
       DISTRO.each do |distro|
-        bazel_target_name = "#{PREFIX}:#{kind}_#{user}_#{arch}_#{distro}"
-        bazel_image_name = "bazel/experimental/ruby:#{kind}_#{user}_#{arch}_#{distro}"
-        docker_image_tag = "ghcr.io/#{ENV["GITHUB_REPOSITORY_OWNER"]}/distroless/ruby:#{kind == 'ruby' ? '' : kind + "_"}#{user}_#{arch}_#{distro}"
+        variant = "ruby#{mode}_#{user}_#{arch}_#{distro}"
+        load_target = "//ruby:load_#{variant}"
+        docker_image = "bazel/ruby:#{variant}"
 
-        system "bazel run #{bazel_target_name}"
+        tag_suffix = [
+          mode.empty? ? nil : mode.delete_prefix("_"),
+          user,
+          arch,
+          distro,
+        ].compact.join("_")
 
-        system "docker tag #{bazel_image_name} #{docker_image_tag}-#{build_date}"
-        system "docker push #{docker_image_tag}-#{build_date}"
+        docker_tag_base = "ghcr.io/#{ENV["GITHUB_REPOSITORY_OWNER"]}/distroless/ruby:#{tag_suffix}"
 
-        system "docker tag #{bazel_image_name} #{docker_image_tag}-latest"
-        system "docker push #{docker_image_tag}-latest"
+        # Load the OCI image into docker
+        system("bazel run #{load_target}", exception: true)
+
+        # Tag and push with date
+        system("docker tag #{docker_image} #{docker_tag_base}-#{build_date}", exception: true)
+        system("docker push #{docker_tag_base}-#{build_date}", exception: true)
+
+        # Tag and push as latest
+        system("docker tag #{docker_image} #{docker_tag_base}-latest", exception: true)
+        system("docker push #{docker_tag_base}-latest", exception: true)
       end
     end
   end

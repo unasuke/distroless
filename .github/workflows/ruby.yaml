@@ -7,23 +7,30 @@ on:
   schedule:
     - cron: "0 0 * * 6" # At 00:00 on Saturday
 
+permissions:
+  contents: read
+  packages: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      # - uses: bazelbuild/setup-bazelisk@v1
-      - uses: actions/cache@v2
+      - uses: actions/checkout@v6
+      - uses: actions/cache@v4
         with:
-          path: "~/.cache/bazel"
-          key: bazel
+          path: |
+            ~/.cache/bazel-repo
+          key: bazel-cache-ruby-${{ github.sha }}
+          restore-keys: |
+            bazel-cache-ruby-
       - name: Build
         run: |
           set -ex
-          bazelisk build --curses=no //package_manager:dpkg_parser.par
-          bazelisk build --curses=no //experimental/ruby:all
+          bazel --bazelrc=$GITHUB_WORKSPACE/.github/workflows/ci.bazelrc build //ruby/...
+      - name: Login to GHCR
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_ACTOR: ${{ github.actor }}
+        run: echo "${GITHUB_TOKEN}" | docker login ghcr.io -u "${GITHUB_ACTOR}" --password-stdin
       - name: Push
-        run: |
-          set -ex
-          echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
-          ./push.rb
+        run: ./push.rb
