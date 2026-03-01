@@ -1,0 +1,15 @@
+schemaVersion: "1.0.0"
+commandTests:
+  - name: hello
+    command: ["/usr/bin/ruby", "-e", "puts 'Hello World'"]
+    expectedOutput: ['Hello World']
+
+  # ensure there is no shell
+  - name: no_shell
+    command: ["/usr/bin/ruby", "-e", "system('echo hello') || exit(1)"]
+    exitCode: 1
+
+  # file names are UTF-8: default for modern Linux systems
+  - name: filesystem_utf8
+    command: ["/usr/bin/ruby", "-e", "File.write('h\u00e9llo', ''); puts __ENCODING__"]
+    expectedOutput: ['UTF-8']

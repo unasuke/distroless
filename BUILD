@@ -6,6 +6,7 @@ load("//cc:config.bzl", "CC_ARCHITECTURES", "CC_DISTROS")
 load("//nodejs:config.bzl", "NODEJS_ARCHITECTURES", "NODEJS_DISTROS", "NODEJS_MAJOR_VERSIONS")
 load("//java:config.bzl", "JAVA_ARCHITECTURES", "JAVA_DISTROS", "JAVA_MAJOR_VERSIONS")
 load("//python3:config.bzl", "PYTHON_ARCHITECTURES", "PYTHON_DISTROS")
+load("//ruby:config.bzl", "RUBY_ARCHITECTURES", "RUBY_DISTROS")
 
 package(default_visibility = ["//visibility:public"])
 
@@ -164,6 +165,35 @@ PYTHON3 |= {
 }
 
 ###############
+# RUBY        #
+###############
+RUBY = {
+    "{REGISTRY}/{PROJECT_ID}/ruby:" + tag_base + "-" + arch: "//ruby:ruby" + debug_mode + "_" + user + "_" + arch + "_" + DEFAULT_DISTRO
+    for arch in RUBY_ARCHITECTURES[DEFAULT_DISTRO]
+    for (tag_base, debug_mode, user) in VARIANTS
+}
+
+# oci_image_index
+RUBY |= {
+    "{REGISTRY}/{PROJECT_ID}/ruby:" + tag_base: "//ruby:ruby" + debug_mode + "_" + user + "_" + DEFAULT_DISTRO
+    for (tag_base, debug_mode, user) in VARIANTS
+}
+
+RUBY |= {
+    "{REGISTRY}/{PROJECT_ID}/ruby-" + distro + ":" + tag_base + "-" + arch: "//ruby:ruby" + debug_mode + "_" + user + "_" + arch + "_" + distro
+    for distro in RUBY_DISTROS
+    for arch in RUBY_ARCHITECTURES[distro]
+    for (tag_base, debug_mode, user) in VARIANTS
+}
+
+# oci_image_index
+RUBY |= {
+    "{REGISTRY}/{PROJECT_ID}/ruby-" + distro + ":" + tag_base: "//ruby:ruby" + debug_mode + "_" + user + "_" + distro
+    for distro in RUBY_DISTROS
+    for (tag_base, debug_mode, user) in VARIANTS
+}
+
+###############
 # NODEJS      #
 ###############
 NODEJS = {
@@ -267,6 +297,8 @@ ALL |= BASE_NOSSL
 ALL |= CC
 
 ALL |= PYTHON3
+
+ALL |= RUBY
 
 ALL |= NODEJS
 

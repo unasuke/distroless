@@ -1,0 +1,26 @@
+schemaVersion: "1.0.0"
+commandTests:
+  - name: version
+    command: ["/usr/bin/ruby", "--version"]
+    expectedOutput: ["ruby 3.3"]
+
+  # ensure standard libraries can be loaded
+  - name: require_yaml
+    command: ["/usr/bin/ruby", "-e", "require 'yaml'; puts 'ok'"]
+    expectedOutput: ['ok']
+
+  - name: require_json
+    command: ["/usr/bin/ruby", "-e", "require 'json'; puts 'ok'"]
+    expectedOutput: ['ok']
+
+  - name: require_openssl
+    command: ["/usr/bin/ruby", "-e", "require 'openssl'; puts OpenSSL::OPENSSL_VERSION"]
+    exitCode: 0
+
+  - name: require_zlib
+    command: ["/usr/bin/ruby", "-e", "require 'zlib'; puts 'ok'"]
+    expectedOutput: ['ok']
+
+  - name: require_fiddle
+    command: ["/usr/bin/ruby", "-e", "require 'fiddle'; puts 'ok'"]
+    expectedOutput: ['ok']
