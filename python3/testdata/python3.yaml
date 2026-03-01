@@ -1,0 +1,22 @@
+schemaVersion: "1.0.0"
+commandTests:
+  - name: hello
+    command: ["/usr/bin/python3", "-c", "print('Hello World')"]
+    expectedOutput: ['Hello World']
+
+  # ensure there is no shell
+  - name: no_shell
+    command: ["/usr/bin/python3", "-c",
+      "import subprocess, sys; subprocess.check_call(sys.executable + ' -h', shell=True)"]
+    exitCode: 1
+
+  # file names are UTF-8: default for modern Linux systems
+  # The \xe9 backslash must be double-escaped to avoid YAML string parsing weirdness
+  - name: filesystem_utf8
+    command: ["/usr/bin/python3", "-c", "open(u'h\\xe9llo', 'w'); import sys; print(sys.getfilesystemencoding())"]
+    expectedOutput: ['utf-8']
+
+  # the print function should output UTF-8
+  - name: print_utf8
+    command: ["/usr/bin/python3", "-c", "print(u'h\\xe9llo.txt')"]
+    expectedOutput: ['h\xe9llo']

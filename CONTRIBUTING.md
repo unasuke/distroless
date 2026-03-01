@@ -6,32 +6,48 @@ We'd love to accept your patches! Before we can take them, we have to jump a cou
 
 Please fill out either the individual or corporate [Contributor License Agreement (CLA)](https://cla.developers.google.com/about).
 
-  * If you are an individual writing original source code and you're sure you own the intellectual property, then you'll need to sign an [individual CLA](https://cla.developers.google.com/about/google-individual).
-  * If you work for a company that wants to allow you to contribute your work, then you'll need to sign a [corporate CLA](https://cla.developers.google.com/about/google-corporate).
+- If you are an individual writing original source code and you're sure you own the intellectual property, then you'll need to sign an [individual CLA](https://cla.developers.google.com/about/google-individual).
+- If you work for a company that wants to allow you to contribute your work, then you'll need to sign a [corporate CLA](https://cla.developers.google.com/about/google-corporate).
 
 Follow either of the two links above to access the appropriate CLA and instructions for how to sign and return it. Once we receive it, we'll be able to accept your pull requests.
 
 ## How to Build and Test
 
-Look into `./test.sh` to understand how. Minimally,
+1. `bazel build //...` to build the whole project or ex:`bazel build //base:static_root_amd64_debian17` for a single image
 
-1. Build `dpkg_parser.par` first, if not done so: `bazel build //package_manager:dpkg_parser.par` 
-   - Your Python 3 executable should be called `python`, not `python3`.
-   - You may need to provide `--host_force_python=PY2` if you don't have a working version of Python 3.
-   - If you do not have a `~/.netrc`, you must create an empty `.netrc` file in your home directory.
+2. For running tests, check `./knife test`. (`bazel test //...` will NOT run all tests, as many tests are marked "manual".)
 
-   You don't have to repeat this step unless you cleaned your workspace or want to generate a new version of `dpkg_parser.par`.
-1. `bazel build //...`
+3. For building and loading images to your local Docker engine, you need to add a new rule for that image to the BUILD:
 
-For running tests, check `./test.sh`. (`bazel test //...` will NOT run all tests, as many tests are marked "manual".)
+```starlark
+load("@rules_oci//oci:defs.bzl", "oci_load")
 
-For building and loading images to your local Docker engine, do `bazel run //java:java11_debian10` for example. After successful build, `docker images` will list images like `bazel/java:java11_debian10`.
+oci_load(
+  name = "local_build",
+  image = "//base:static_root_amd64_debian17",
+  repo_tags = [],
+)
+```
+
+then run the following command to load into the daemon
+
+```shell
+bazel run //:local_build
+```
+
+## Adding or removing Debian packages
+
+Whenever a change made to `common/*.yaml` manifests, the locking step has to be performed to regenerate lock files.
+
+This can be done by running; `./knife lock`
+
+## Code style
 
 For styling Bazel files, install and run `buildifier` with:
 
 ```shell
 # Install buildifier version 3.2.0
-GO111MODULE=on go get github.com/bazelbuild/buildtools/buildifier@3.2.0
+go install github.com/bazelbuild/buildtools/buildifier@latest
 
 # This will automatically fix files.
 buildifier -mode=fix $(find . -name 'BUILD*' -o -name 'WORKSPACE*' -o -name '*.bzl' -type f)
@@ -44,6 +60,8 @@ For styling Python files, [install](https://www.pylint.org/#install) and run `py
 sudo pip install pylint
 # Or
 sudo apt-get install pylint
+# Or on macos
+brew install pylint
 
 # Identify python style issues.
 find . -name "*.py" | xargs pylint --disable=R,C

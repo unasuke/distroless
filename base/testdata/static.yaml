@@ -1,6 +1,0 @@
-schemaVersion: "1.0.0"
-commandTests:
-# Check that Go programs can read the certificates
-- name: certs
-  command: ["/check_certs"]
-  exitCode: 0

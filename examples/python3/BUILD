@@ -1,19 +1,39 @@
 # Public notice: this file is for internal documentation, testing, and
 # reference only. Note that repo maintainers can freely change any part of the
 # repository code at any time.
-load("@io_bazel_rules_docker//python:image.bzl", "py_image")
-load("@io_bazel_rules_docker//container:container.bzl", "container_image")
+load("@rules_oci//oci:defs.bzl", "oci_image", "oci_load")
+load("//private/util:tar.bzl", "tar")
+load("//python3:config.bzl", DISTROS = "PYTHON_DISTROS")
 
-py_image(
+tar(
     name = "hello_py",
     srcs = ["hello.py"],
-    base = "//experimental/python3:python3_root_amd64_debian11",
-    main = "hello.py",
 )
 
 # This example runs a python program that walks the filesystem under "/etc" and prints every filename.
-container_image(
-    name = "hello",
-    base = ":hello_py",
-    cmd = ["/etc"],
-)
+[
+    oci_image(
+        name = "hello_" + distro,
+        base = "//python3:python3_root_amd64_" + distro,
+        cmd = [
+            "hello.py",
+            "/etc",
+        ],
+        tars = [
+            ":hello_py",
+        ],
+    )
+    for distro in DISTROS
+]
+
+# Run
+# bazel run //examples/python3:tarball_debian12
+# podman run localhost/distroless/examples/py:latest
+[
+    oci_load(
+        name = "tarball_" + distro,
+        image = ":hello_" + distro,
+        repo_tags = ["distroless/examples/py:latest"],
+    )
+    for distro in DISTROS
+]

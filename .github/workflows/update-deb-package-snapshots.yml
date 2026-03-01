@@ -1,33 +1,70 @@
-#name: update-snapshots
-#on:
-#  # will send emails to last editor of this cron syntax
-#  schedule:
-#    - cron:  '35 8 * * *'
-#jobs:
-#  build:
-#    runs-on: ubuntu-latest
-#    permissions:
-#      pull-requests: write
-#
-#    steps:
-#    - name: Checkout
-#      uses: actions/checkout@v2
-#        
-#
-#    - name: Set up Go 1.16.x
-#      uses: actions/setup-go@v2
-#      with:
-#        go-version: 1.16.x
-#      id: go
-#
-#    - name: Run update script
-#      run: ./updateWorkspaceSnapshots.sh
-#    
-#    - name: Create Pull Request
-#      uses: peter-evans/create-pull-request@7380612b49221684fefa025244f2ef4008ae50ad
-#      with:
-#        token: ${{ secrets.ACTIONS_TOKEN }}
-#        commit-message: "Bumping packages to latest stable versions"
-#        title: "Bumping packages to latest stable versions"
-#        body: "Bumping packages to latest stable versions"
-#        branch: "update-snapshots"
+name: update-snapshots
+on:
+  # will send emails to last editor of this cron syntax (distroless-bot)
+  # schedule:
+  #   - cron: "35 20 * * *"
+  # allow this workflow to be manually run
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-go@v6
+        with:
+          go-version: "1.25"
+
+      - name: Update snapshots
+        run: ./knife github-update-snapshots
+
+      - name: Run update sboms script
+        if: env.DISTROLESS_DIFF
+        run: |
+          for i in $(seq 5); do
+            bazel --bazelrc=$GITHUB_WORKSPACE/.github/workflows/ci.bazelrc fetch //private/pkg/test/oci_image:test_sboms && break || sleep 20;
+          done
+          bazel run @//private/pkg/test/oci_image:test_sboms
+
+      - name: Run update lockfile
+        if: env.DISTROLESS_DIFF
+        run: bazel mod deps --lockfile_mode=update
+
+      - name: Create commits
+        if: env.DISTROLESS_DIFF
+        id: create-commits
+        run: |
+          git checkout -b update-snapshots
+
+          # Set identity.
+          git config --global user.email "distroless-bot@google.com"
+          git config --global user.name "Distroless Bot"
+
+          # Commit changes
+          git add .
+          git commit -s -m "Bumping packages to latest stable versions"
+          git push --force origin HEAD
+
+      - name: Create Pull Request
+        if: env.DISTROLESS_DIFF
+        env:
+          GH_TOKEN: ${{ secrets.ACTIONS_TOKEN }}
+        run: |
+          BODY_FILE=$(mktemp)
+          printf "Bumping packages to latest stable version\n\`\`\`diff\n$DISTROLESS_DIFF\n\`\`\`\n" >> $BODY_FILE
+          if ! OUTPUT=$(gh pr create -B main -H update-snapshots -t "Bumping packages to latest stable versions" --body-file "$BODY_FILE" 2>&1) ; then
+            echo $OUTPUT
+            if [[ "${OUTPUT}" =~ "already exists" ]]; then
+              echo "PR already exists and it was updated. Ending successfully";
+              exit 0;
+            else
+              exit 1;
+            fi
+          fi

@@ -1,41 +1,47 @@
 # Public notice: this file is for internal documentation, testing, and
 # reference only. Note that repo maintainers can freely change any part of the
 # repository code at any time.
-load("@bazel_tools//tools/build_defs/pkg:pkg.bzl", "pkg_tar")
-load("@io_bazel_rules_docker//go:image.bzl", "go_image")
-load("@io_bazel_rules_docker//container:container.bzl", "container_image")
-load("@io_bazel_rules_docker//contrib:test.bzl", "container_test")
-load("@io_bazel_rules_docker//contrib:passwd.bzl", "passwd_entry", "passwd_file")
-load("@io_bazel_rules_go//go:def.bzl", "go_binary")
-load("//base:distro.bzl", "DISTROS")
+load("@container_structure_test//:defs.bzl", "container_structure_test")
+load("@rules_go//go:def.bzl", "go_binary")
+load("@rules_distroless//distroless:defs.bzl", "home", "passwd")
+load("@rules_oci//oci:defs.bzl", "oci_image")
+load("//private/util:tar.bzl", "tar")
+load("//:distro.bzl", DISTROS = "ALL_DISTROS")
 
-# Create a passwd file with a nonroot user and uid.
-passwd_entry(
-    name = "nonroot_user",
-    info = "nonroot",
-    uid = 1002,
-    username = "nonroot",
-)
-
-passwd_file(
+# Create a passwd file and home directory with a nonroot user and uid.
+passwd(
     name = "passwd",
     entries = [
-        ":nonroot_user",
+        {
+            "gecos": ["nonroot"],
+            "gid": 1000,
+            "home": "/home",
+            "shell": "/bin/bash",
+            "uid": 1002,
+            "username": "nonroot",
+        },
     ],
 )
 
-pkg_tar(
-    name = "passwd_tar",
-    srcs = [":passwd"],
-    mode = "0644",
-    package_dir = "etc",
+home(
+    name = "home",
+    dirs = [
+        {
+            "home": "/home",
+            "uid": 1002,
+            "gid": 1000,
+        },
+    ],
 )
 
 # Include it in our image as a tar.
-container_image(
+oci_image(
     name = "passwd_image",
-    base = "//base:base_root_amd64_debian10",
-    tars = [":passwd_tar"],
+    base = "//base:base_root_amd64_debian12",
+    tars = [
+        ":passwd",
+        ":home",
+    ],
     user = "nonroot",
     visibility = ["//visibility:private"],
 )
@@ -50,15 +56,20 @@ go_binary(
     pure = "on",
 )
 
-[container_image(
+tar(
+    name = "user_tar",
+    srcs = [":user"],
+)
+
+[oci_image(
     name = "check_user_image_" + distro,
     base = ":passwd_image",
-    files = [":user"],
+    tars = [":user_tar"],
     visibility = ["//visibility:private"],
 ) for distro in DISTROS]
 
 # Test to verify this works :)
-[container_test(
+[container_structure_test(
     name = "check_user_" + distro + "_test",
     configs = ["testdata/user.yaml"],
     image = ":check_user_image_" + distro,

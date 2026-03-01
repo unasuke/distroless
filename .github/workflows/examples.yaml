@@ -1,0 +1,17 @@
+name: Examples
+
+on:
+  pull_request:
+    branches: [ 'main' ]
+
+permissions:
+  contents: read
+
+jobs:
+  examples:
+    name: Build and run examples
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v6
+      - run: ./examples/test.sh

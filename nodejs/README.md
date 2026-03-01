@@ -2,15 +2,13 @@
 
 ## Image Contents
 
-These images contain a minimal Linux, Node.js-based runtime. The supported versions match the [Node.js LTS releases](https://nodejs.org/en/about/releases/).
+These images contain a minimal Linux, Node.js-based runtime. The supported versions match the [Node.js LTS releases](https://nodejs.org/en/about/previous-releases).
 
-Specifically, these images contain everything in the [base image](../base/README.md), plus one of:
+Specifically, these images contain everything in the [cc image](../cc/README.md), plus one of:
 
-- Node.js v12 (`gcr.io/distroless/nodejs:12`) and its dependencies.
-- Node.js v14 (`gcr.io/distroless/nodejs:14`) and its dependencies.
-- Node.js v16 (`gcr.io/distroless/nodejs:16`) and its dependencies.
-
-**Note:** the `latest` tag maps to Node.js v16 to follow the official node docker images. However we recommend that users of these images should explicitly set the LTS version tag they wish to use.
+- Node.js v20 (`gcr.io/distroless/nodejs20-debian13`) and its dependencies.
+- Node.js v22 (`gcr.io/distroless/nodejs22-debian13`) and its dependencies.
+- Node.js v24 (`gcr.io/distroless/nodejs24-debian13`) and its dependencies.
 
 ## Usage
 

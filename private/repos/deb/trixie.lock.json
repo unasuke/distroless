@@ -1,0 +1,1061 @@
+{
+	"packages": [
+		{
+			"arch": "amd64",
+			"dependencies": [],
+			"key": "base-files_13.8-p-deb13u3_amd64",
+			"name": "base-files",
+			"sha256": "b649e44786cff7fcfbfaddeb40b9cf9b0825f04e9e05b770d2b1fb4c5ca3b942",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/b/base-files/base-files_13.8+deb13u3_amd64.deb"
+			],
+			"version": "13.8+deb13u3"
+		},
+		{
+			"arch": "amd64",
+			"dependencies": [],
+			"key": "ca-certificates_20250419_amd64",
+			"name": "ca-certificates",
+			"sha256": "ef590f89563aa4b46c8260d49d1cea0fc1b181d19e8df3782694706adf05c184",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/c/ca-certificates/ca-certificates_20250419_all.deb"
+			],
+			"version": "20250419"
+		},
+		{
+			"arch": "amd64",
+			"dependencies": [],
+			"key": "libc6_2.41-12-p-deb13u1_amd64",
+			"name": "libc6",
+			"sha256": "0a51c7ba7c59b3c664b836fe33c5184e6f5a869f57e86613381e954d74282b66",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/g/glibc/libc6_2.41-12+deb13u1_amd64.deb"
+			],
+			"version": "2.41-12+deb13u1"
+		},
+		{
+			"arch": "amd64",
+			"dependencies": [],
+			"key": "libc-bin_2.41-12-p-deb13u1_amd64",
+			"name": "libc-bin",
+			"sha256": "5c7fce98b72c1b663326b6062c3e46d30b21063142364d6d09d1663c1ac7e6d3",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/g/glibc/libc-bin_2.41-12+deb13u1_amd64.deb"
+			],
+			"version": "2.41-12+deb13u1"
+		},
+		{
+			"arch": "amd64",
+			"dependencies": [],
+			"key": "libssl3t64_3.5.4-1_deb13u2_amd64",
+			"name": "libssl3t64",
+			"sha256": "4a832fbdfc6ae292e4846eab6a6bf3687958c37ebcfd970e49169774d66d1231",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian-security/20260218T203007Z/pool/updates/main/o/openssl/libssl3t64_3.5.4-1~deb13u2_amd64.deb"
+			],
+			"version": "3.5.4-1~deb13u2"
+		},
+		{
+			"arch": "amd64",
+			"dependencies": [],
+			"key": "netbase_6.5_amd64",
+			"name": "netbase",
+			"sha256": "76bafa92947ebd37b0a6f9ec6570412041f56edebc1c66d323731216d318471e",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/n/netbase/netbase_6.5_all.deb"
+			],
+			"version": "6.5"
+		},
+		{
+			"arch": "amd64",
+			"dependencies": [],
+			"key": "openssl_3.5.4-1_deb13u2_amd64",
+			"name": "openssl",
+			"sha256": "583f2881a9ed89e480d46caa3de39a6f0e174d259077a98c8b6cc3d46166e1e5",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian-security/20260218T203007Z/pool/updates/main/o/openssl/openssl_3.5.4-1~deb13u2_amd64.deb"
+			],
+			"version": "3.5.4-1~deb13u2"
+		},
+		{
+			"arch": "amd64",
+			"dependencies": [],
+			"key": "tzdata_2025b-4-p-deb13u1_amd64",
+			"name": "tzdata",
+			"sha256": "19a87f5184503fb5eeffe97bd7e107e193ac28107789a1e85331ed9381040f17",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/t/tzdata/tzdata_2025b-4+deb13u1_all.deb"
+			],
+			"version": "2025b-4+deb13u1"
+		},
+		{
+			"arch": "amd64",
+			"dependencies": [],
+			"key": "tzdata-legacy_2025b-4-p-deb13u1_amd64",
+			"name": "tzdata-legacy",
+			"sha256": "394399a3ebf508bcc95748f5c9ce445a0194b47ebe78ed741cdb70e18db4c65c",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/t/tzdata/tzdata-legacy_2025b-4+deb13u1_all.deb"
+			],
+			"version": "2025b-4+deb13u1"
+		},
+		{
+			"arch": "amd64",
+			"dependencies": [],
+			"key": "media-types_13.0.0_amd64",
+			"name": "media-types",
+			"sha256": "0788e4b0b72db1bcf74a19cb24c3511e7770ad0b341f0f30e361701c3072f53e",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/m/media-types/media-types_13.0.0_all.deb"
+			],
+			"version": "13.0.0"
+		},
+		{
+			"arch": "amd64",
+			"dependencies": [],
+			"key": "zlib1g_1-1.3.dfsg-p-really1.3.1-1-p-b1_amd64",
+			"name": "zlib1g",
+			"sha256": "015be740d6236ad114582dea500c1d907f29e16d6db00566ca32fb68d71ac90d",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/z/zlib/zlib1g_1.3.dfsg+really1.3.1-1+b1_amd64.deb"
+			],
+			"version": "1:1.3.dfsg+really1.3.1-1+b1"
+		},
+		{
+			"arch": "amd64",
+			"dependencies": [],
+			"key": "libzstd1_1.5.7-p-dfsg-1_amd64",
+			"name": "libzstd1",
+			"sha256": "2f6a2aeacfc925eba8b00ac9139bc4bfccf8cacb09eb93de067074b26948eef9",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/libz/libzstd/libzstd1_1.5.7+dfsg-1_amd64.deb"
+			],
+			"version": "1.5.7+dfsg-1"
+		},
+		{
+			"arch": "amd64",
+			"dependencies": [],
+			"key": "gcc-14-base_14.2.0-19_amd64",
+			"name": "gcc-14-base",
+			"sha256": "5b6825de4263824b78c4c51f6476414f3b4e89c2ab63e81dc8b9b5501e867cf6",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/g/gcc-14/gcc-14-base_14.2.0-19_amd64.deb"
+			],
+			"version": "14.2.0-19"
+		},
+		{
+			"arch": "amd64",
+			"dependencies": [],
+			"key": "libgcc-s1_14.2.0-19_amd64",
+			"name": "libgcc-s1",
+			"sha256": "3c71917b490d1a17aed43196a2787a256ecf060526cdb20216a74bedc061b150",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/g/gcc-14/libgcc-s1_14.2.0-19_amd64.deb"
+			],
+			"version": "14.2.0-19"
+		},
+		{
+			"arch": "amd64",
+			"dependencies": [],
+			"key": "libgomp1_14.2.0-19_amd64",
+			"name": "libgomp1",
+			"sha256": "72b7a1a33c48f3195efeb044111b34ae684b1e640bb6495c832443b798601cd5",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/g/gcc-14/libgomp1_14.2.0-19_amd64.deb"
+			],
+			"version": "14.2.0-19"
+		},
+		{
+			"arch": "amd64",
+			"dependencies": [],
+			"key": "libstdc-p--p-6_14.2.0-19_amd64",
+			"name": "libstdc++6",
+			"sha256": "ab1fa05837aa7a92aae748fd07a18a35f7d18bb4a71c4724fe2bbf0e32089de0",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/g/gcc-14/libstdc++6_14.2.0-19_amd64.deb"
+			],
+			"version": "14.2.0-19"
+		},
+		{
+			"arch": "arm64",
+			"dependencies": [],
+			"key": "base-files_13.8-p-deb13u3_arm64",
+			"name": "base-files",
+			"sha256": "02832c35c1588ea5cba07bb965946ccee0d71b9dd8cf0dee9ed7f138402abbef",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/b/base-files/base-files_13.8+deb13u3_arm64.deb"
+			],
+			"version": "13.8+deb13u3"
+		},
+		{
+			"arch": "arm64",
+			"dependencies": [],
+			"key": "ca-certificates_20250419_arm64",
+			"name": "ca-certificates",
+			"sha256": "ef590f89563aa4b46c8260d49d1cea0fc1b181d19e8df3782694706adf05c184",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/c/ca-certificates/ca-certificates_20250419_all.deb"
+			],
+			"version": "20250419"
+		},
+		{
+			"arch": "arm64",
+			"dependencies": [],
+			"key": "libc6_2.41-12-p-deb13u1_arm64",
+			"name": "libc6",
+			"sha256": "19c43436854a1207a9bf0cea32fa3c0a069fd26f82ab23302d20b0574b635395",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/g/glibc/libc6_2.41-12+deb13u1_arm64.deb"
+			],
+			"version": "2.41-12+deb13u1"
+		},
+		{
+			"arch": "arm64",
+			"dependencies": [],
+			"key": "libc-bin_2.41-12-p-deb13u1_arm64",
+			"name": "libc-bin",
+			"sha256": "73429db9f1c5132dae8bd7c9d303b808fcf663cd0bfe875f71a822d9461387bd",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/g/glibc/libc-bin_2.41-12+deb13u1_arm64.deb"
+			],
+			"version": "2.41-12+deb13u1"
+		},
+		{
+			"arch": "arm64",
+			"dependencies": [],
+			"key": "libssl3t64_3.5.4-1_deb13u2_arm64",
+			"name": "libssl3t64",
+			"sha256": "bf08516b135862e5284635ac300189ecfee25f26c9bad79a3599474e63ad4dc5",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian-security/20260218T203007Z/pool/updates/main/o/openssl/libssl3t64_3.5.4-1~deb13u2_arm64.deb"
+			],
+			"version": "3.5.4-1~deb13u2"
+		},
+		{
+			"arch": "arm64",
+			"dependencies": [],
+			"key": "netbase_6.5_arm64",
+			"name": "netbase",
+			"sha256": "76bafa92947ebd37b0a6f9ec6570412041f56edebc1c66d323731216d318471e",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/n/netbase/netbase_6.5_all.deb"
+			],
+			"version": "6.5"
+		},
+		{
+			"arch": "arm64",
+			"dependencies": [],
+			"key": "openssl_3.5.4-1_deb13u2_arm64",
+			"name": "openssl",
+			"sha256": "b51177af3e5b9ff495c82ecd6f6df596c4272600dbbea328f8ac9210598f154b",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian-security/20260218T203007Z/pool/updates/main/o/openssl/openssl_3.5.4-1~deb13u2_arm64.deb"
+			],
+			"version": "3.5.4-1~deb13u2"
+		},
+		{
+			"arch": "arm64",
+			"dependencies": [],
+			"key": "tzdata_2025b-4-p-deb13u1_arm64",
+			"name": "tzdata",
+			"sha256": "19a87f5184503fb5eeffe97bd7e107e193ac28107789a1e85331ed9381040f17",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/t/tzdata/tzdata_2025b-4+deb13u1_all.deb"
+			],
+			"version": "2025b-4+deb13u1"
+		},
+		{
+			"arch": "arm64",
+			"dependencies": [],
+			"key": "tzdata-legacy_2025b-4-p-deb13u1_arm64",
+			"name": "tzdata-legacy",
+			"sha256": "394399a3ebf508bcc95748f5c9ce445a0194b47ebe78ed741cdb70e18db4c65c",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/t/tzdata/tzdata-legacy_2025b-4+deb13u1_all.deb"
+			],
+			"version": "2025b-4+deb13u1"
+		},
+		{
+			"arch": "arm64",
+			"dependencies": [],
+			"key": "media-types_13.0.0_arm64",
+			"name": "media-types",
+			"sha256": "0788e4b0b72db1bcf74a19cb24c3511e7770ad0b341f0f30e361701c3072f53e",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/m/media-types/media-types_13.0.0_all.deb"
+			],
+			"version": "13.0.0"
+		},
+		{
+			"arch": "arm64",
+			"dependencies": [],
+			"key": "zlib1g_1-1.3.dfsg-p-really1.3.1-1-p-b1_arm64",
+			"name": "zlib1g",
+			"sha256": "209aa5cf671e97b9eb0410844fa6df4cae2e75b0c72e7802ab6c8ece13e6ddef",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/z/zlib/zlib1g_1.3.dfsg+really1.3.1-1+b1_arm64.deb"
+			],
+			"version": "1:1.3.dfsg+really1.3.1-1+b1"
+		},
+		{
+			"arch": "arm64",
+			"dependencies": [],
+			"key": "libzstd1_1.5.7-p-dfsg-1_arm64",
+			"name": "libzstd1",
+			"sha256": "924540bd59fdbfa77a0604360efdaca54411a43daf11c7e002a3c64791b67448",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/libz/libzstd/libzstd1_1.5.7+dfsg-1_arm64.deb"
+			],
+			"version": "1.5.7+dfsg-1"
+		},
+		{
+			"arch": "arm64",
+			"dependencies": [],
+			"key": "gcc-14-base_14.2.0-19_arm64",
+			"name": "gcc-14-base",
+			"sha256": "34ee90679b018c0e64234747a4c4c0ae6b7f63541115037465a8627c2dfbc594",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/g/gcc-14/gcc-14-base_14.2.0-19_arm64.deb"
+			],
+			"version": "14.2.0-19"
+		},
+		{
+			"arch": "arm64",
+			"dependencies": [],
+			"key": "libgcc-s1_14.2.0-19_arm64",
+			"name": "libgcc-s1",
+			"sha256": "1108bc87879833d6d9a145f22a4a15cddb34e065b4b5f4b97bee586adbac2851",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/g/gcc-14/libgcc-s1_14.2.0-19_arm64.deb"
+			],
+			"version": "14.2.0-19"
+		},
+		{
+			"arch": "arm64",
+			"dependencies": [],
+			"key": "libgomp1_14.2.0-19_arm64",
+			"name": "libgomp1",
+			"sha256": "43e84cb7971d8a4d8870cab6204e998ea4f23ee1339bb0ff556dd881bac82d25",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/g/gcc-14/libgomp1_14.2.0-19_arm64.deb"
+			],
+			"version": "14.2.0-19"
+		},
+		{
+			"arch": "arm64",
+			"dependencies": [],
+			"key": "libstdc-p--p-6_14.2.0-19_arm64",
+			"name": "libstdc++6",
+			"sha256": "6669b0c52a2e7c6af9adfdabce3ff6e286065cdfbc7b85280862b5f799daebee",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/g/gcc-14/libstdc++6_14.2.0-19_arm64.deb"
+			],
+			"version": "14.2.0-19"
+		},
+		{
+			"arch": "armhf",
+			"dependencies": [],
+			"key": "base-files_13.8-p-deb13u3_armhf",
+			"name": "base-files",
+			"sha256": "107ece7f54870c1ddc3d1aa568a8e2748d9504bd11ace632b2a6e096e62775c8",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/b/base-files/base-files_13.8+deb13u3_armhf.deb"
+			],
+			"version": "13.8+deb13u3"
+		},
+		{
+			"arch": "armhf",
+			"dependencies": [],
+			"key": "ca-certificates_20250419_armhf",
+			"name": "ca-certificates",
+			"sha256": "ef590f89563aa4b46c8260d49d1cea0fc1b181d19e8df3782694706adf05c184",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/c/ca-certificates/ca-certificates_20250419_all.deb"
+			],
+			"version": "20250419"
+		},
+		{
+			"arch": "armhf",
+			"dependencies": [],
+			"key": "libc6_2.41-12-p-deb13u1_armhf",
+			"name": "libc6",
+			"sha256": "72e88cc59f686fa80c4b718ef2c5d36ea680f80c76770eb4bac25da99ac3ae2b",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/g/glibc/libc6_2.41-12+deb13u1_armhf.deb"
+			],
+			"version": "2.41-12+deb13u1"
+		},
+		{
+			"arch": "armhf",
+			"dependencies": [],
+			"key": "libc-bin_2.41-12-p-deb13u1_armhf",
+			"name": "libc-bin",
+			"sha256": "78e99a9f4bfd4934878d05ff682db0f4c142b06b4e8b3372db9d157d37a3d36b",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/g/glibc/libc-bin_2.41-12+deb13u1_armhf.deb"
+			],
+			"version": "2.41-12+deb13u1"
+		},
+		{
+			"arch": "armhf",
+			"dependencies": [],
+			"key": "libssl3t64_3.5.4-1_deb13u2_armhf",
+			"name": "libssl3t64",
+			"sha256": "40b39b9bc8f92f15d4a166035a55afe029834832d97ec17b9ae5337db146e4f1",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian-security/20260218T203007Z/pool/updates/main/o/openssl/libssl3t64_3.5.4-1~deb13u2_armhf.deb"
+			],
+			"version": "3.5.4-1~deb13u2"
+		},
+		{
+			"arch": "armhf",
+			"dependencies": [],
+			"key": "netbase_6.5_armhf",
+			"name": "netbase",
+			"sha256": "76bafa92947ebd37b0a6f9ec6570412041f56edebc1c66d323731216d318471e",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/n/netbase/netbase_6.5_all.deb"
+			],
+			"version": "6.5"
+		},
+		{
+			"arch": "armhf",
+			"dependencies": [],
+			"key": "openssl_3.5.4-1_deb13u2_armhf",
+			"name": "openssl",
+			"sha256": "5f36b557d610a37aaa640c39b597ed6e8cb4c295c076ddeeb93256d017b1c06c",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian-security/20260218T203007Z/pool/updates/main/o/openssl/openssl_3.5.4-1~deb13u2_armhf.deb"
+			],
+			"version": "3.5.4-1~deb13u2"
+		},
+		{
+			"arch": "armhf",
+			"dependencies": [],
+			"key": "tzdata_2025b-4-p-deb13u1_armhf",
+			"name": "tzdata",
+			"sha256": "19a87f5184503fb5eeffe97bd7e107e193ac28107789a1e85331ed9381040f17",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/t/tzdata/tzdata_2025b-4+deb13u1_all.deb"
+			],
+			"version": "2025b-4+deb13u1"
+		},
+		{
+			"arch": "armhf",
+			"dependencies": [],
+			"key": "tzdata-legacy_2025b-4-p-deb13u1_armhf",
+			"name": "tzdata-legacy",
+			"sha256": "394399a3ebf508bcc95748f5c9ce445a0194b47ebe78ed741cdb70e18db4c65c",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/t/tzdata/tzdata-legacy_2025b-4+deb13u1_all.deb"
+			],
+			"version": "2025b-4+deb13u1"
+		},
+		{
+			"arch": "armhf",
+			"dependencies": [],
+			"key": "media-types_13.0.0_armhf",
+			"name": "media-types",
+			"sha256": "0788e4b0b72db1bcf74a19cb24c3511e7770ad0b341f0f30e361701c3072f53e",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/m/media-types/media-types_13.0.0_all.deb"
+			],
+			"version": "13.0.0"
+		},
+		{
+			"arch": "armhf",
+			"dependencies": [],
+			"key": "zlib1g_1-1.3.dfsg-p-really1.3.1-1-p-b1_armhf",
+			"name": "zlib1g",
+			"sha256": "81c55a59e1570477ecef6a449bf6dce44dad67ba4ce9e04760451d4cfe200534",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/z/zlib/zlib1g_1.3.dfsg+really1.3.1-1+b1_armhf.deb"
+			],
+			"version": "1:1.3.dfsg+really1.3.1-1+b1"
+		},
+		{
+			"arch": "armhf",
+			"dependencies": [],
+			"key": "libzstd1_1.5.7-p-dfsg-1_armhf",
+			"name": "libzstd1",
+			"sha256": "da5238dd84fc51f782f39d435821bff556409b3dbc82d232e4e81f427fb1ca65",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/libz/libzstd/libzstd1_1.5.7+dfsg-1_armhf.deb"
+			],
+			"version": "1.5.7+dfsg-1"
+		},
+		{
+			"arch": "armhf",
+			"dependencies": [],
+			"key": "gcc-14-base_14.2.0-19_armhf",
+			"name": "gcc-14-base",
+			"sha256": "0f702fdd5e5471efda9fece892e09ce73e3447968083e1f8c341f8b66b1fb340",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/g/gcc-14/gcc-14-base_14.2.0-19_armhf.deb"
+			],
+			"version": "14.2.0-19"
+		},
+		{
+			"arch": "armhf",
+			"dependencies": [],
+			"key": "libgcc-s1_14.2.0-19_armhf",
+			"name": "libgcc-s1",
+			"sha256": "25910c3a0bce3985e388de445244578b7922dc670c9bba1c8673779b89447873",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/g/gcc-14/libgcc-s1_14.2.0-19_armhf.deb"
+			],
+			"version": "14.2.0-19"
+		},
+		{
+			"arch": "armhf",
+			"dependencies": [],
+			"key": "libgomp1_14.2.0-19_armhf",
+			"name": "libgomp1",
+			"sha256": "00e56cbc41157ce7139b758b422133ab2a75bdfc71ee5c8c2ab8dbdc98cb2dbf",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/g/gcc-14/libgomp1_14.2.0-19_armhf.deb"
+			],
+			"version": "14.2.0-19"
+		},
+		{
+			"arch": "armhf",
+			"dependencies": [],
+			"key": "libstdc-p--p-6_14.2.0-19_armhf",
+			"name": "libstdc++6",
+			"sha256": "9c82eecc30961a3da3e062c0dba8ce076736059f4b8e7794c803985e75aea48b",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/g/gcc-14/libstdc++6_14.2.0-19_armhf.deb"
+			],
+			"version": "14.2.0-19"
+		},
+		{
+			"arch": "s390x",
+			"dependencies": [],
+			"key": "base-files_13.8-p-deb13u3_s390x",
+			"name": "base-files",
+			"sha256": "a3a243a8ecafc552d48455fb9c6d4c671a437bdf4c5e00aaa5fa5c3ba379aefa",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/b/base-files/base-files_13.8+deb13u3_s390x.deb"
+			],
+			"version": "13.8+deb13u3"
+		},
+		{
+			"arch": "s390x",
+			"dependencies": [],
+			"key": "ca-certificates_20250419_s390x",
+			"name": "ca-certificates",
+			"sha256": "ef590f89563aa4b46c8260d49d1cea0fc1b181d19e8df3782694706adf05c184",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/c/ca-certificates/ca-certificates_20250419_all.deb"
+			],
+			"version": "20250419"
+		},
+		{
+			"arch": "s390x",
+			"dependencies": [],
+			"key": "libc6_2.41-12-p-deb13u1_s390x",
+			"name": "libc6",
+			"sha256": "2b1e940445537eac11647db5a470bec1c33fdbec60a2e3bae84c9c18fb487a0e",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/g/glibc/libc6_2.41-12+deb13u1_s390x.deb"
+			],
+			"version": "2.41-12+deb13u1"
+		},
+		{
+			"arch": "s390x",
+			"dependencies": [],
+			"key": "libc-bin_2.41-12-p-deb13u1_s390x",
+			"name": "libc-bin",
+			"sha256": "0d27900d3f983295ce4123d0dd577b6247bb186bbf823f3382fe925eb52501a1",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/g/glibc/libc-bin_2.41-12+deb13u1_s390x.deb"
+			],
+			"version": "2.41-12+deb13u1"
+		},
+		{
+			"arch": "s390x",
+			"dependencies": [],
+			"key": "libssl3t64_3.5.4-1_deb13u2_s390x",
+			"name": "libssl3t64",
+			"sha256": "09e5c05eeff223bb7c82b313b1e174e4ea776438ba142a1f08eeb9937c957c79",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian-security/20260218T203007Z/pool/updates/main/o/openssl/libssl3t64_3.5.4-1~deb13u2_s390x.deb"
+			],
+			"version": "3.5.4-1~deb13u2"
+		},
+		{
+			"arch": "s390x",
+			"dependencies": [],
+			"key": "netbase_6.5_s390x",
+			"name": "netbase",
+			"sha256": "76bafa92947ebd37b0a6f9ec6570412041f56edebc1c66d323731216d318471e",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/n/netbase/netbase_6.5_all.deb"
+			],
+			"version": "6.5"
+		},
+		{
+			"arch": "s390x",
+			"dependencies": [],
+			"key": "openssl_3.5.4-1_deb13u2_s390x",
+			"name": "openssl",
+			"sha256": "3e38d071c8ca89a63d4ec05d5e8c8573264baadeb958ac974fe23125c83c3c2a",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian-security/20260218T203007Z/pool/updates/main/o/openssl/openssl_3.5.4-1~deb13u2_s390x.deb"
+			],
+			"version": "3.5.4-1~deb13u2"
+		},
+		{
+			"arch": "s390x",
+			"dependencies": [],
+			"key": "tzdata_2025b-4-p-deb13u1_s390x",
+			"name": "tzdata",
+			"sha256": "19a87f5184503fb5eeffe97bd7e107e193ac28107789a1e85331ed9381040f17",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/t/tzdata/tzdata_2025b-4+deb13u1_all.deb"
+			],
+			"version": "2025b-4+deb13u1"
+		},
+		{
+			"arch": "s390x",
+			"dependencies": [],
+			"key": "tzdata-legacy_2025b-4-p-deb13u1_s390x",
+			"name": "tzdata-legacy",
+			"sha256": "394399a3ebf508bcc95748f5c9ce445a0194b47ebe78ed741cdb70e18db4c65c",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/t/tzdata/tzdata-legacy_2025b-4+deb13u1_all.deb"
+			],
+			"version": "2025b-4+deb13u1"
+		},
+		{
+			"arch": "s390x",
+			"dependencies": [],
+			"key": "media-types_13.0.0_s390x",
+			"name": "media-types",
+			"sha256": "0788e4b0b72db1bcf74a19cb24c3511e7770ad0b341f0f30e361701c3072f53e",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/m/media-types/media-types_13.0.0_all.deb"
+			],
+			"version": "13.0.0"
+		},
+		{
+			"arch": "s390x",
+			"dependencies": [],
+			"key": "zlib1g_1-1.3.dfsg-p-really1.3.1-1-p-b1_s390x",
+			"name": "zlib1g",
+			"sha256": "e38a94c60e944dfcf1937a12b02785afbbb2bedf356da18984c4dac0acc47ed9",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/z/zlib/zlib1g_1.3.dfsg+really1.3.1-1+b1_s390x.deb"
+			],
+			"version": "1:1.3.dfsg+really1.3.1-1+b1"
+		},
+		{
+			"arch": "s390x",
+			"dependencies": [],
+			"key": "libzstd1_1.5.7-p-dfsg-1_s390x",
+			"name": "libzstd1",
+			"sha256": "ed6bd13718360720b0a03d62e2440bd926b1db3b7443f46314fe3deb7e69989e",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/libz/libzstd/libzstd1_1.5.7+dfsg-1_s390x.deb"
+			],
+			"version": "1.5.7+dfsg-1"
+		},
+		{
+			"arch": "s390x",
+			"dependencies": [],
+			"key": "gcc-14-base_14.2.0-19_s390x",
+			"name": "gcc-14-base",
+			"sha256": "7db20fd710eadefff128e82b4d4de68b466ce2aa1c53255004eb1d3d1d168495",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/g/gcc-14/gcc-14-base_14.2.0-19_s390x.deb"
+			],
+			"version": "14.2.0-19"
+		},
+		{
+			"arch": "s390x",
+			"dependencies": [],
+			"key": "libgcc-s1_14.2.0-19_s390x",
+			"name": "libgcc-s1",
+			"sha256": "b5e87f11a8ac0537d500bf2dba37165bf8d25b5b44add1035a32deddbd4bfdda",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/g/gcc-14/libgcc-s1_14.2.0-19_s390x.deb"
+			],
+			"version": "14.2.0-19"
+		},
+		{
+			"arch": "s390x",
+			"dependencies": [],
+			"key": "libgomp1_14.2.0-19_s390x",
+			"name": "libgomp1",
+			"sha256": "7297625ed2bd024f2fbb013a3a2c291cd4b0d5fb02afccaeba85c4cb8c386a2d",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/g/gcc-14/libgomp1_14.2.0-19_s390x.deb"
+			],
+			"version": "14.2.0-19"
+		},
+		{
+			"arch": "s390x",
+			"dependencies": [],
+			"key": "libstdc-p--p-6_14.2.0-19_s390x",
+			"name": "libstdc++6",
+			"sha256": "6a91f4a1c8c30dc6d0a23ad7ead8a56271b9f6966d6d74734f4b423cdfe5c21b",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/g/gcc-14/libstdc++6_14.2.0-19_s390x.deb"
+			],
+			"version": "14.2.0-19"
+		},
+		{
+			"arch": "ppc64el",
+			"dependencies": [],
+			"key": "base-files_13.8-p-deb13u3_ppc64el",
+			"name": "base-files",
+			"sha256": "93271c6138e398eeba932016b89836af4438066a0f55de337ba6d4e8a8b05a08",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/b/base-files/base-files_13.8+deb13u3_ppc64el.deb"
+			],
+			"version": "13.8+deb13u3"
+		},
+		{
+			"arch": "ppc64el",
+			"dependencies": [],
+			"key": "ca-certificates_20250419_ppc64el",
+			"name": "ca-certificates",
+			"sha256": "ef590f89563aa4b46c8260d49d1cea0fc1b181d19e8df3782694706adf05c184",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/c/ca-certificates/ca-certificates_20250419_all.deb"
+			],
+			"version": "20250419"
+		},
+		{
+			"arch": "ppc64el",
+			"dependencies": [],
+			"key": "libc6_2.41-12-p-deb13u1_ppc64el",
+			"name": "libc6",
+			"sha256": "f7bfed25f9153426d92bdb894861f8249018a326b54e7b381904abb15524c440",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/g/glibc/libc6_2.41-12+deb13u1_ppc64el.deb"
+			],
+			"version": "2.41-12+deb13u1"
+		},
+		{
+			"arch": "ppc64el",
+			"dependencies": [],
+			"key": "libc-bin_2.41-12-p-deb13u1_ppc64el",
+			"name": "libc-bin",
+			"sha256": "34e8a2f96dd198b4581c7bf2de54e664499e2bb9eaa7e5c5f271827faf207e57",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/g/glibc/libc-bin_2.41-12+deb13u1_ppc64el.deb"
+			],
+			"version": "2.41-12+deb13u1"
+		},
+		{
+			"arch": "ppc64el",
+			"dependencies": [],
+			"key": "libssl3t64_3.5.4-1_deb13u2_ppc64el",
+			"name": "libssl3t64",
+			"sha256": "cc6ec9ebe696b2e113ca7b24f1bdfa34de9bbfbad8c1f80083d5a77627475aa1",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian-security/20260218T203007Z/pool/updates/main/o/openssl/libssl3t64_3.5.4-1~deb13u2_ppc64el.deb"
+			],
+			"version": "3.5.4-1~deb13u2"
+		},
+		{
+			"arch": "ppc64el",
+			"dependencies": [],
+			"key": "netbase_6.5_ppc64el",
+			"name": "netbase",
+			"sha256": "76bafa92947ebd37b0a6f9ec6570412041f56edebc1c66d323731216d318471e",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/n/netbase/netbase_6.5_all.deb"
+			],
+			"version": "6.5"
+		},
+		{
+			"arch": "ppc64el",
+			"dependencies": [],
+			"key": "openssl_3.5.4-1_deb13u2_ppc64el",
+			"name": "openssl",
+			"sha256": "41790a030f98725f4aff4d51d43c3ef6aa1d166fade931c44bfe2b25ddb38c49",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian-security/20260218T203007Z/pool/updates/main/o/openssl/openssl_3.5.4-1~deb13u2_ppc64el.deb"
+			],
+			"version": "3.5.4-1~deb13u2"
+		},
+		{
+			"arch": "ppc64el",
+			"dependencies": [],
+			"key": "tzdata_2025b-4-p-deb13u1_ppc64el",
+			"name": "tzdata",
+			"sha256": "19a87f5184503fb5eeffe97bd7e107e193ac28107789a1e85331ed9381040f17",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/t/tzdata/tzdata_2025b-4+deb13u1_all.deb"
+			],
+			"version": "2025b-4+deb13u1"
+		},
+		{
+			"arch": "ppc64el",
+			"dependencies": [],
+			"key": "tzdata-legacy_2025b-4-p-deb13u1_ppc64el",
+			"name": "tzdata-legacy",
+			"sha256": "394399a3ebf508bcc95748f5c9ce445a0194b47ebe78ed741cdb70e18db4c65c",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/t/tzdata/tzdata-legacy_2025b-4+deb13u1_all.deb"
+			],
+			"version": "2025b-4+deb13u1"
+		},
+		{
+			"arch": "ppc64el",
+			"dependencies": [],
+			"key": "media-types_13.0.0_ppc64el",
+			"name": "media-types",
+			"sha256": "0788e4b0b72db1bcf74a19cb24c3511e7770ad0b341f0f30e361701c3072f53e",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/m/media-types/media-types_13.0.0_all.deb"
+			],
+			"version": "13.0.0"
+		},
+		{
+			"arch": "ppc64el",
+			"dependencies": [],
+			"key": "zlib1g_1-1.3.dfsg-p-really1.3.1-1-p-b1_ppc64el",
+			"name": "zlib1g",
+			"sha256": "f526e830310db11983cf51cfde95a74bc449a7bdc44b6ce68827d78802f1b4ae",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/z/zlib/zlib1g_1.3.dfsg+really1.3.1-1+b1_ppc64el.deb"
+			],
+			"version": "1:1.3.dfsg+really1.3.1-1+b1"
+		},
+		{
+			"arch": "ppc64el",
+			"dependencies": [],
+			"key": "libzstd1_1.5.7-p-dfsg-1_ppc64el",
+			"name": "libzstd1",
+			"sha256": "1cdefa11a7d31bb36b610d4e44551870a44dfc6cac8359ebe9f9061a4f830773",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/libz/libzstd/libzstd1_1.5.7+dfsg-1_ppc64el.deb"
+			],
+			"version": "1.5.7+dfsg-1"
+		},
+		{
+			"arch": "ppc64el",
+			"dependencies": [],
+			"key": "gcc-14-base_14.2.0-19_ppc64el",
+			"name": "gcc-14-base",
+			"sha256": "ebb80291fedd8db88488eef76573df0b4a1a11648a16406d9a0c0d4aaf229593",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/g/gcc-14/gcc-14-base_14.2.0-19_ppc64el.deb"
+			],
+			"version": "14.2.0-19"
+		},
+		{
+			"arch": "ppc64el",
+			"dependencies": [],
+			"key": "libgcc-s1_14.2.0-19_ppc64el",
+			"name": "libgcc-s1",
+			"sha256": "9fef01c88bc508ff05ff9ce5d0cc05de36798591e060b07749c3835616ed5696",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/g/gcc-14/libgcc-s1_14.2.0-19_ppc64el.deb"
+			],
+			"version": "14.2.0-19"
+		},
+		{
+			"arch": "ppc64el",
+			"dependencies": [],
+			"key": "libgomp1_14.2.0-19_ppc64el",
+			"name": "libgomp1",
+			"sha256": "cca95ab0ba3537a573c1d2796b8c1a00ef2839766fbb01b7b8882f47b2d504bb",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/g/gcc-14/libgomp1_14.2.0-19_ppc64el.deb"
+			],
+			"version": "14.2.0-19"
+		},
+		{
+			"arch": "ppc64el",
+			"dependencies": [],
+			"key": "libstdc-p--p-6_14.2.0-19_ppc64el",
+			"name": "libstdc++6",
+			"sha256": "ee601ab87b7c7ac01f3d7be0fe2423f0ddc3a51b46d3331b4e9dff4110e6a8b9",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/g/gcc-14/libstdc++6_14.2.0-19_ppc64el.deb"
+			],
+			"version": "14.2.0-19"
+		},
+		{
+			"arch": "riscv64",
+			"dependencies": [],
+			"key": "base-files_13.8-p-deb13u3_riscv64",
+			"name": "base-files",
+			"sha256": "72b65aa9a24ecc95fc9db64d6da28771e4833af49534cd815ba1ac45cdeafb12",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/b/base-files/base-files_13.8+deb13u3_riscv64.deb"
+			],
+			"version": "13.8+deb13u3"
+		},
+		{
+			"arch": "riscv64",
+			"dependencies": [],
+			"key": "ca-certificates_20250419_riscv64",
+			"name": "ca-certificates",
+			"sha256": "ef590f89563aa4b46c8260d49d1cea0fc1b181d19e8df3782694706adf05c184",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/c/ca-certificates/ca-certificates_20250419_all.deb"
+			],
+			"version": "20250419"
+		},
+		{
+			"arch": "riscv64",
+			"dependencies": [],
+			"key": "libc6_2.41-12-p-deb13u1_riscv64",
+			"name": "libc6",
+			"sha256": "02061995da9e91f4a75c547254343f9e0e4d53ba30cf475adef4fd55467cfe0c",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/g/glibc/libc6_2.41-12+deb13u1_riscv64.deb"
+			],
+			"version": "2.41-12+deb13u1"
+		},
+		{
+			"arch": "riscv64",
+			"dependencies": [],
+			"key": "libc-bin_2.41-12-p-deb13u1_riscv64",
+			"name": "libc-bin",
+			"sha256": "5f9b3c864154422529b2da03e3018a07a63a9796a6da47875121896cdc3dc343",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/g/glibc/libc-bin_2.41-12+deb13u1_riscv64.deb"
+			],
+			"version": "2.41-12+deb13u1"
+		},
+		{
+			"arch": "riscv64",
+			"dependencies": [],
+			"key": "libssl3t64_3.5.4-1_deb13u2_riscv64",
+			"name": "libssl3t64",
+			"sha256": "30e9c43603b8d5ba5a25e2e69254f9651def1c8d90873b8962f3d99db35b84b6",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian-security/20260218T203007Z/pool/updates/main/o/openssl/libssl3t64_3.5.4-1~deb13u2_riscv64.deb"
+			],
+			"version": "3.5.4-1~deb13u2"
+		},
+		{
+			"arch": "riscv64",
+			"dependencies": [],
+			"key": "netbase_6.5_riscv64",
+			"name": "netbase",
+			"sha256": "76bafa92947ebd37b0a6f9ec6570412041f56edebc1c66d323731216d318471e",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/n/netbase/netbase_6.5_all.deb"
+			],
+			"version": "6.5"
+		},
+		{
+			"arch": "riscv64",
+			"dependencies": [],
+			"key": "openssl_3.5.4-1_deb13u2_riscv64",
+			"name": "openssl",
+			"sha256": "211770235d2a0d25c059181d51cb2e578e3ee8fcd8b5bcb53b85bbc9b87593e1",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian-security/20260218T203007Z/pool/updates/main/o/openssl/openssl_3.5.4-1~deb13u2_riscv64.deb"
+			],
+			"version": "3.5.4-1~deb13u2"
+		},
+		{
+			"arch": "riscv64",
+			"dependencies": [],
+			"key": "tzdata_2025b-4-p-deb13u1_riscv64",
+			"name": "tzdata",
+			"sha256": "19a87f5184503fb5eeffe97bd7e107e193ac28107789a1e85331ed9381040f17",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/t/tzdata/tzdata_2025b-4+deb13u1_all.deb"
+			],
+			"version": "2025b-4+deb13u1"
+		},
+		{
+			"arch": "riscv64",
+			"dependencies": [],
+			"key": "tzdata-legacy_2025b-4-p-deb13u1_riscv64",
+			"name": "tzdata-legacy",
+			"sha256": "394399a3ebf508bcc95748f5c9ce445a0194b47ebe78ed741cdb70e18db4c65c",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/t/tzdata/tzdata-legacy_2025b-4+deb13u1_all.deb"
+			],
+			"version": "2025b-4+deb13u1"
+		},
+		{
+			"arch": "riscv64",
+			"dependencies": [],
+			"key": "media-types_13.0.0_riscv64",
+			"name": "media-types",
+			"sha256": "0788e4b0b72db1bcf74a19cb24c3511e7770ad0b341f0f30e361701c3072f53e",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/m/media-types/media-types_13.0.0_all.deb"
+			],
+			"version": "13.0.0"
+		},
+		{
+			"arch": "riscv64",
+			"dependencies": [],
+			"key": "zlib1g_1-1.3.dfsg-p-really1.3.1-1-p-b1_riscv64",
+			"name": "zlib1g",
+			"sha256": "38c52eef58e5fc9b13d93f8a7d0a0549c32b4f00402a778d39a135254f554314",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/z/zlib/zlib1g_1.3.dfsg+really1.3.1-1+b1_riscv64.deb"
+			],
+			"version": "1:1.3.dfsg+really1.3.1-1+b1"
+		},
+		{
+			"arch": "riscv64",
+			"dependencies": [],
+			"key": "libzstd1_1.5.7-p-dfsg-1_riscv64",
+			"name": "libzstd1",
+			"sha256": "5967f5f97bfb6e7a8036d4e615c0ecd6861a9bb686bd60ee0c81422581faf0ad",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/libz/libzstd/libzstd1_1.5.7+dfsg-1_riscv64.deb"
+			],
+			"version": "1.5.7+dfsg-1"
+		},
+		{
+			"arch": "riscv64",
+			"dependencies": [],
+			"key": "gcc-14-base_14.2.0-19_riscv64",
+			"name": "gcc-14-base",
+			"sha256": "bb871e84c5c108463fa6a858e72f15cbf809f3888442b89941fc625449874206",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/g/gcc-14/gcc-14-base_14.2.0-19_riscv64.deb"
+			],
+			"version": "14.2.0-19"
+		},
+		{
+			"arch": "riscv64",
+			"dependencies": [],
+			"key": "libgcc-s1_14.2.0-19_riscv64",
+			"name": "libgcc-s1",
+			"sha256": "16d3f9f534028615413d23f649e5d246baef48fe7db739ad564ef8b9a6e5587c",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/g/gcc-14/libgcc-s1_14.2.0-19_riscv64.deb"
+			],
+			"version": "14.2.0-19"
+		},
+		{
+			"arch": "riscv64",
+			"dependencies": [],
+			"key": "libgomp1_14.2.0-19_riscv64",
+			"name": "libgomp1",
+			"sha256": "0d457810c609eed431d438aa3e7a0c5a6974d3dca8e16ecd8fe38a949ba63b0f",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/g/gcc-14/libgomp1_14.2.0-19_riscv64.deb"
+			],
+			"version": "14.2.0-19"
+		},
+		{
+			"arch": "riscv64",
+			"dependencies": [],
+			"key": "libstdc-p--p-6_14.2.0-19_riscv64",
+			"name": "libstdc++6",
+			"sha256": "f285313f34e0d8f65463c669fac8eb29760a3f3fd6459005dd3110cdd2b10fd7",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/g/gcc-14/libstdc++6_14.2.0-19_riscv64.deb"
+			],
+			"version": "14.2.0-19"
+		}
+	],
+	"version": 1
+}

@@ -4,14 +4,15 @@ The current estimation of end of life for images with the pattern:
 
 `gcr.io/distroless/<image>-debian<version>:(latest|nonroot|debug|debug-nonroot)`
 
-| Image       | Debian 10 EOL | Debian 11 EOL   |
-| ----------- | ------------- | --------------- |
-| static      | aug 2022      | debian 12 + 1yr |
-| base        | aug 2022      | debian 12 + 1yr |
-| cc          | aug 2022      | debian 12 + 1yr |
-| java*       | jan 2022      | debian 12 + 3mo |
-| node*       | jan 2022      | debian 12 + 3mo |
-| python*     | jan 2022      | debian 12 + 3mo |
+| Image       | Debian 12 EOL  | Debian 13 EOL               |
+| ----------- | -------------- | --------------------------- |
+| static      | Sept 2026      | debian 14 release day + 1yr |
+| base        | Sept 2026      | debian 14 release day + 1yr |
+| base-nossl  | Sept 2026      | debian 14 release day + 1yr |
+| cc          | Sept 2026      | debian 14 release day + 1yr |
+| java*       | Jan 2026       | debian 14 release day + 3mo |
+| node*       | Jan 2026       | debian 14 release day + 3mo |
+| python*     | April 2026     | debian 14 release day + 3mo |
 
 \* see below for language specific runtime notes
 
@@ -20,10 +21,9 @@ The current estimation of end of life for images with the pattern:
 Java will only support current LTS version distributed by debian [see here](https://wiki.debian.org/Java).
 
 ### Node
-Node version support is for even numbered releases (12, 14, etc) that are current, active or in LTS maintenance. For more information, [see here](https://nodejs.org/en/about/releases/).
+Node version support is for even numbered releases (20, 22, 24, etc) that are current, active or in LTS maintenance. For more information, [see here](https://nodejs.org/en/about/previous-releases#release-schedule).
 
-### Python
-Python support is experimental, and this project does not make any guarantees about the version of python in images.
+### Python (TBD)
 
-
-### Images no longer supported (TBD)
+### Images no longer supported
+A list of supported image tags is available here: https://github.com/GoogleContainerTools/distroless#what-images-are-available
