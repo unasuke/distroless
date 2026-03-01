@@ -1,0 +1,313 @@
+{
+	"packages": [
+		{
+			"arch": "amd64",
+			"dependencies": [],
+			"key": "libruby3.3_3.3.8-2_amd64",
+			"name": "libruby3.3",
+			"sha256": "033d7f7359da6353d29e5cb87ef411357d3841c02fd7d1089897653fec665289",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/r/ruby3.3/libruby3.3_3.3.8-2_amd64.deb"
+			],
+			"version": "3.3.8-2"
+		},
+		{
+			"arch": "amd64",
+			"dependencies": [],
+			"key": "ruby3.3_3.3.8-2_amd64",
+			"name": "ruby3.3",
+			"sha256": "10798ffe8edc86d7f9491655a115049a7a77dfbef5dc909dc13803cbb6c47f9b",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/r/ruby3.3/ruby3.3_3.3.8-2_amd64.deb"
+			],
+			"version": "3.3.8-2"
+		},
+		{
+			"arch": "amd64",
+			"dependencies": [],
+			"key": "ruby-rubygems_3.6.7-2_amd64",
+			"name": "ruby-rubygems",
+			"sha256": "a585dd934ffc58516c468cc06fe10141d1383f96bf1113a25397f0ac043253a1",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/r/rubygems/ruby-rubygems_3.6.7-2_all.deb"
+			],
+			"version": "3.6.7-2"
+		},
+		{
+			"arch": "amd64",
+			"dependencies": [],
+			"key": "rubygems-integration_1.19_amd64",
+			"name": "rubygems-integration",
+			"sha256": "ca8c600505bd4c5046b2c60fbf964d6f4eb08db86eb77526a3de0315f1222afe",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/r/rubygems-integration/rubygems-integration_1.19_all.deb"
+			],
+			"version": "1.19"
+		},
+		{
+			"arch": "amd64",
+			"dependencies": [],
+			"key": "libyaml-0-2_0.2.5-2_amd64",
+			"name": "libyaml-0-2",
+			"sha256": "8a5475402801de445a17887bb72d03613565a6a84b216b4b606d1462c613eeb2",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/liby/libyaml/libyaml-0-2_0.2.5-2_amd64.deb"
+			],
+			"version": "0.2.5-2"
+		},
+		{
+			"arch": "amd64",
+			"dependencies": [],
+			"key": "libgmp10_2-6.3.0-p-dfsg-3_amd64",
+			"name": "libgmp10",
+			"sha256": "d0d0265eb01770f17afd0f7c8c0622f80479dcfbbe13653a0debeec61464e622",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/g/gmp/libgmp10_6.3.0+dfsg-3_amd64.deb"
+			],
+			"version": "2:6.3.0+dfsg-3"
+		},
+		{
+			"arch": "amd64",
+			"dependencies": [],
+			"key": "libffi8_3.4.8-2_amd64",
+			"name": "libffi8",
+			"sha256": "0ebdc340de33333639c3c63874cd4b15ac2e83dfa1ef3053b7eefaf4919f4f68",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/libf/libffi/libffi8_3.4.8-2_amd64.deb"
+			],
+			"version": "3.4.8-2"
+		},
+		{
+			"arch": "amd64",
+			"dependencies": [],
+			"key": "libgdbm6t64_1.24-2_amd64",
+			"name": "libgdbm6t64",
+			"sha256": "e7b42c68c391e278733adb3c1efdacd24d660862bd7bac0efbc10a91e5696dfc",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/g/gdbm/libgdbm6t64_1.24-2_amd64.deb"
+			],
+			"version": "1.24-2"
+		},
+		{
+			"arch": "amd64",
+			"dependencies": [],
+			"key": "libgdbm-compat4t64_1.24-2_amd64",
+			"name": "libgdbm-compat4t64",
+			"sha256": "2cbd43cf2dfbf57ff48188b5d79d29cf7ea8f0dedaa61ab0bcc02eceff50ea01",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/g/gdbm/libgdbm-compat4t64_1.24-2_amd64.deb"
+			],
+			"version": "1.24-2"
+		},
+		{
+			"arch": "amd64",
+			"dependencies": [],
+			"key": "libreadline8t64_8.2-6_amd64",
+			"name": "libreadline8t64",
+			"sha256": "eeadf2b5e755c9f183883feea2d9b5b28560284275d5f54d3e55d0923b1d0967",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/r/readline/libreadline8t64_8.2-6_amd64.deb"
+			],
+			"version": "8.2-6"
+		},
+		{
+			"arch": "amd64",
+			"dependencies": [],
+			"key": "libtinfo6_6.5-p-20250216-2_amd64",
+			"name": "libtinfo6",
+			"sha256": "8b9f6a7983e9418564e48a627518de4c03917b56efe68d7f3e93bd8fffa1cc10",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/n/ncurses/libtinfo6_6.5+20250216-2_amd64.deb"
+			],
+			"version": "6.5+20250216-2"
+		},
+		{
+			"arch": "amd64",
+			"dependencies": [],
+			"key": "libncursesw6_6.5-p-20250216-2_amd64",
+			"name": "libncursesw6",
+			"sha256": "47baa2e11579583654583a066b69bd5a5d2f22423081f707ed6c0c3ba6d538b7",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/n/ncurses/libncursesw6_6.5+20250216-2_amd64.deb"
+			],
+			"version": "6.5+20250216-2"
+		},
+		{
+			"arch": "amd64",
+			"dependencies": [],
+			"key": "zlib1g_1-1.3.dfsg-p-really1.3.1-1-p-b1_amd64",
+			"name": "zlib1g",
+			"sha256": "015be740d6236ad114582dea500c1d907f29e16d6db00566ca32fb68d71ac90d",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/z/zlib/zlib1g_1.3.dfsg+really1.3.1-1+b1_amd64.deb"
+			],
+			"version": "1:1.3.dfsg+really1.3.1-1+b1"
+		},
+		{
+			"arch": "amd64",
+			"dependencies": [],
+			"key": "libc-bin_2.41-12-p-deb13u1_amd64",
+			"name": "libc-bin",
+			"sha256": "5c7fce98b72c1b663326b6062c3e46d30b21063142364d6d09d1663c1ac7e6d3",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/g/glibc/libc-bin_2.41-12+deb13u1_amd64.deb"
+			],
+			"version": "2.41-12+deb13u1"
+		},
+		{
+			"arch": "arm64",
+			"dependencies": [],
+			"key": "libruby3.3_3.3.8-2_arm64",
+			"name": "libruby3.3",
+			"sha256": "f6a27358f72f41df6156208742d7466e1f408c6dbb52730bde9638e1befa7862",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/r/ruby3.3/libruby3.3_3.3.8-2_arm64.deb"
+			],
+			"version": "3.3.8-2"
+		},
+		{
+			"arch": "arm64",
+			"dependencies": [],
+			"key": "ruby3.3_3.3.8-2_arm64",
+			"name": "ruby3.3",
+			"sha256": "a9f2660cd68c3bd72dff9136148e42f0653bbc93fbef775fec52ea778aa3b009",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/r/ruby3.3/ruby3.3_3.3.8-2_arm64.deb"
+			],
+			"version": "3.3.8-2"
+		},
+		{
+			"arch": "arm64",
+			"dependencies": [],
+			"key": "ruby-rubygems_3.6.7-2_arm64",
+			"name": "ruby-rubygems",
+			"sha256": "a585dd934ffc58516c468cc06fe10141d1383f96bf1113a25397f0ac043253a1",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/r/rubygems/ruby-rubygems_3.6.7-2_all.deb"
+			],
+			"version": "3.6.7-2"
+		},
+		{
+			"arch": "arm64",
+			"dependencies": [],
+			"key": "rubygems-integration_1.19_arm64",
+			"name": "rubygems-integration",
+			"sha256": "ca8c600505bd4c5046b2c60fbf964d6f4eb08db86eb77526a3de0315f1222afe",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/r/rubygems-integration/rubygems-integration_1.19_all.deb"
+			],
+			"version": "1.19"
+		},
+		{
+			"arch": "arm64",
+			"dependencies": [],
+			"key": "libyaml-0-2_0.2.5-2_arm64",
+			"name": "libyaml-0-2",
+			"sha256": "c81500b4c93e29ac28cdded7ec5bf9950c75f8c76c386669ccb6fb854c4daf72",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/liby/libyaml/libyaml-0-2_0.2.5-2_arm64.deb"
+			],
+			"version": "0.2.5-2"
+		},
+		{
+			"arch": "arm64",
+			"dependencies": [],
+			"key": "libgmp10_2-6.3.0-p-dfsg-3_arm64",
+			"name": "libgmp10",
+			"sha256": "a27bbc27f119161ea9702c8dd66f54131cdf0d2ca73000f50ea91ef2fdfef0fb",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/g/gmp/libgmp10_6.3.0+dfsg-3_arm64.deb"
+			],
+			"version": "2:6.3.0+dfsg-3"
+		},
+		{
+			"arch": "arm64",
+			"dependencies": [],
+			"key": "libffi8_3.4.8-2_arm64",
+			"name": "libffi8",
+			"sha256": "d84a783b818f2386627604e64b793eb4ac5bb9ea1ba321a194a1c9c82fe09a01",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/libf/libffi/libffi8_3.4.8-2_arm64.deb"
+			],
+			"version": "3.4.8-2"
+		},
+		{
+			"arch": "arm64",
+			"dependencies": [],
+			"key": "libgdbm6t64_1.24-2_arm64",
+			"name": "libgdbm6t64",
+			"sha256": "329efe726e24a413b9933e298ce24d255973ec111eea0ca721157968fd24156a",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/g/gdbm/libgdbm6t64_1.24-2_arm64.deb"
+			],
+			"version": "1.24-2"
+		},
+		{
+			"arch": "arm64",
+			"dependencies": [],
+			"key": "libgdbm-compat4t64_1.24-2_arm64",
+			"name": "libgdbm-compat4t64",
+			"sha256": "266b9a9e8d1ecc4393ebd29bec7e7c0fe1505b1d8755033af9e15df161316627",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/g/gdbm/libgdbm-compat4t64_1.24-2_arm64.deb"
+			],
+			"version": "1.24-2"
+		},
+		{
+			"arch": "arm64",
+			"dependencies": [],
+			"key": "libreadline8t64_8.2-6_arm64",
+			"name": "libreadline8t64",
+			"sha256": "f78ff432b2a627bc04f7eef0e6e2696501c9e06feca748a5b741d5e594429033",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/r/readline/libreadline8t64_8.2-6_arm64.deb"
+			],
+			"version": "8.2-6"
+		},
+		{
+			"arch": "arm64",
+			"dependencies": [],
+			"key": "libtinfo6_6.5-p-20250216-2_arm64",
+			"name": "libtinfo6",
+			"sha256": "2a747f7fff3c2347c357387a7133df997410f07ba1b1df1a1461a97bd7fbc2fc",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/n/ncurses/libtinfo6_6.5+20250216-2_arm64.deb"
+			],
+			"version": "6.5+20250216-2"
+		},
+		{
+			"arch": "arm64",
+			"dependencies": [],
+			"key": "libncursesw6_6.5-p-20250216-2_arm64",
+			"name": "libncursesw6",
+			"sha256": "72121aeb08be2d915da321ddfae74f62a0764286f336279b2c2609ba07496d6d",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/n/ncurses/libncursesw6_6.5+20250216-2_arm64.deb"
+			],
+			"version": "6.5+20250216-2"
+		},
+		{
+			"arch": "arm64",
+			"dependencies": [],
+			"key": "zlib1g_1-1.3.dfsg-p-really1.3.1-1-p-b1_arm64",
+			"name": "zlib1g",
+			"sha256": "209aa5cf671e97b9eb0410844fa6df4cae2e75b0c72e7802ab6c8ece13e6ddef",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/z/zlib/zlib1g_1.3.dfsg+really1.3.1-1+b1_arm64.deb"
+			],
+			"version": "1:1.3.dfsg+really1.3.1-1+b1"
+		},
+		{
+			"arch": "arm64",
+			"dependencies": [],
+			"key": "libc-bin_2.41-12-p-deb13u1_arm64",
+			"name": "libc-bin",
+			"sha256": "73429db9f1c5132dae8bd7c9d303b808fcf663cd0bfe875f71a822d9461387bd",
+			"urls": [
+				"https://snapshot.debian.org/archive/debian/20260218T203007Z/pool/main/g/glibc/libc-bin_2.41-12+deb13u1_arm64.deb"
+			],
+			"version": "2.41-12+deb13u1"
+		}
+	],
+	"version": 1
+}

@@ -1,0 +1,34 @@
+# debian 12, limited architectures, ruby only
+version: 1
+
+sources:
+  - channel: bookworm main
+    url: https://snapshot.debian.org/archive/debian/20260218T203007Z
+  - channel: bookworm-updates main
+    url: https://snapshot.debian.org/archive/debian/20260218T203007Z
+  - channel: bookworm-security main
+    url: https://snapshot.debian.org/archive/debian-security/20260218T203007Z
+
+archs:
+  - amd64
+  - arm64
+
+packages:
+  # Ruby runtime
+  - libruby3.1
+  - ruby3.1
+  - ruby-rubygems
+  - rubygems-integration
+
+  # Ruby standard library dependencies
+  - libyaml-0-2
+  - libgmp10
+  - libffi8
+  - libgdbm6
+  - libgdbm-compat4
+  - libreadline8
+  - libedit2
+  - libtinfo6
+  - libncursesw6
+  - libcrypt1
+  - zlib1g

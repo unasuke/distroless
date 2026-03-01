@@ -1,0 +1,33 @@
+# debian 13, limited architectures, ruby only
+version: 1
+
+sources:
+  - channel: trixie main
+    url: https://snapshot.debian.org/archive/debian/20260218T203007Z
+  - channel: trixie-updates main
+    url: https://snapshot.debian.org/archive/debian/20260218T203007Z
+  - channel: trixie-security main
+    url: https://snapshot.debian.org/archive/debian-security/20260218T203007Z
+
+archs:
+  - amd64
+  - arm64
+
+packages:
+  # Ruby runtime
+  - libruby3.3
+  - ruby3.3
+  - ruby-rubygems
+  - rubygems-integration
+
+  # Ruby standard library dependencies
+  - libyaml-0-2
+  - libgmp10
+  - libffi8
+  - libgdbm6t64
+  - libgdbm-compat4t64
+  - libreadline8t64
+  - libtinfo6
+  - libncursesw6
+  - zlib1g
+  - libc-bin
